@@ -1,6 +1,6 @@
-import React from 'react'
+export const Menu = (props) => {
+    const { onSectionChange, menuOpened, setMenuOpened } = props;
 
-export const Menu = ({ onSectionChange, menuOpened, setMenuOpened }) => {
     return (
         <>
             <button
@@ -32,9 +32,8 @@ export const Menu = ({ onSectionChange, menuOpened, setMenuOpened }) => {
                 </div>
             </div>
         </>
-    )
-}
-
+    );
+};
 
 const MenuButton = (props) => {
     const { label, onClick } = props;
