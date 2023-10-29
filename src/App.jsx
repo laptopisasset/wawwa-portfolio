@@ -10,7 +10,7 @@ import { Menu } from "./components/Menu";
 import { ScrollManager } from "./components/ScrollManager";
 import { framerMotionConfig } from "./config";
 
-import './App.css'
+import './App.css';
 
 function App() {
   const [section, setSection] = useState(0);
@@ -35,7 +35,7 @@ function App() {
               <Experience section={section} menuOpened={menuOpened} />
             </Scroll>
             <Scroll html>
-              <Interface />
+              <Interface setSection={setSection} />
             </Scroll>
           </ScrollControls>
         </Canvas>
