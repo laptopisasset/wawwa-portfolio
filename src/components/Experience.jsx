@@ -1,6 +1,7 @@
 import { ContactShadows, Environment, OrbitControls, Sky } from "@react-three/drei";
 import { Avatar } from "./Avatar";
 import { useControls } from "leva";
+import { Office } from "./office";
 
 
 export function Experience() {
@@ -14,7 +15,9 @@ export function Experience() {
     return (
         <>
             <OrbitControls />
-            <Sky />
+            <Office />
+            <ambientLight intensity={1} />
+            {/* <Sky />
             <Environment preset="sunset" />
             <group position-y={-1}>
                 <Avatar animation={animation} />
@@ -40,7 +43,7 @@ export function Experience() {
                     <planeGeometry />
                     <meshStandardMaterial color="white" />
                 </mesh>
-            </group>
+            </group> */}
         </>
     )
 }
